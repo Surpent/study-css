@@ -1,35 +1,36 @@
 /*
-    セレクタ
-    詳細度 (優先度)
-
-    優先度: 高
-        (a) style=""
-        (b) id
-        (c) 属性/擬似クラス
-        (d) 要素/擬似要素
-    優先度: 低
-
-    a, b, c, d
+値
+- 長さ
+    - px
+    - em
+    - %
+- 色
+    - 名前
+    - RGB
+        - Red 0-f / 00-ff / 0-100%
+        - Green 0-f / 00-ff / 0-100%
+        - Blue 0-f / 00-ff / 0-100%
  */
 
-/* 0, 0, 0, 1 */
-a {color:skyblue;}
-
-/* 0, 0, 1, 1 */
-a.link {color:pink;}
-
-/* 上と同じ詳細度だが、後から記述しているので優先される*/
-/* 0, 0, 1, 1 */
-a.search {color:orange;}
-
-/* 0, 1, 0, 1 */
-a#site {color:blue;}
-
-/* 1, 0, 0, 0
-style 属性を html 側でつける
-*/
+body {font-size: 16px;}
 
 /*
-さらに優先度を高める方法
+em は 倍率
+32px になる
 */
-a {color:red !important;}
+h1{ font-size: 2em;}
+
+/*
+パーセンテージで指定
+*/
+h2{ font-size: 150%;}
+
+
+/*
+いろんな {color: blue;} の表し方
+*/
+body {color: blue;}
+body {color: #00f;}
+body {color: #0000ff;}
+body {color: rgb(0, 0, 255);}
+body {color: rgb(0%, 0%, 100%);}
