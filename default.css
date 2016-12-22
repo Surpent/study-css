@@ -1,33 +1,19 @@
 /*
-    セレクタ
-a, b
-a b
-a > b
-a + b
-ab
+    属性セレクタ
+ */
+
+/*
+a タグがあり[title]属性があるものに適用
+a[title] {color: skyblue;}
 */
 
 /*
-h1 と p に対してスタイル適用
-h1, p {color: skyblue;}
+a タグの [href]属性が"http://google.com"だったら適用
+完全一致する場合に使える
+a[href="http://google.com"] {color: orange;}
 */
 
 /*
-divの下にあるspanに対して適用
-div span {color: skyblue;}
+a タグの[class]属性に search が"含まれているもの"に適用
 */
-
-/*
-div 直下にある span だけに対して適用
-div > span {color: skyblue;}
-*/
-
-/*
-p の次にある p に対して適用
-p + p { color:skyblue; }
-*/
-
-/*
-p であり、かつ points が付いているものに適用
-*/
-p.points {color:skyblue;}
+a[class~="search"] {color: violet;}
