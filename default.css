@@ -1,20 +1,22 @@
 /*
-    background
+    display
+        - block
+        - inline
+        - list-item
+        - inline-block
+        - none
  */
 
-body {
-    /*
-    background-color: silver;
-    background-image: url("bg.png");
-    background-repeat: no-repeat;
-    background-repeat: repeat-x;
-    background-repeat: repeat-y;
-    background-position: 10px 100px
-    background-position: top center;
-    background-attachment: scroll;
-    background-attachment: fixed;
-    */
+h1, p, span, a {
+    border: 1px solid #ddd;
+}
 
-    background: silver repeat-y fixed url("bg.png");
+h1, p {
+    width: 120px;
+    /*display: inline;*/
+    display: inline-block;
+}
 
+span {
+    display: none;
 }
