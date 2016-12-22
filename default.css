@@ -4,14 +4,22 @@
         top/bottom right/left
         top right/left bottom
         top right bottom left
+
+    marginの相殺
+    marginが並ぶ場合、margin同士が結合されて
+    大きいサイズのmarginが優先される
  */
 
 body {
     margin: 0;
 }
 
-div {
-    background: silver;
-    /*padding: 10px 50px;*/
-    padding: 0px 10px 50px 100px;
+div#box1 {
+    background: red;
+    margin: 100px;
+}
+
+div#box2 {
+    background: blue;
+    margin: 10px;
 }
