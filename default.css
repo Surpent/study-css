@@ -1,25 +1,22 @@
 /*
-    padding
-        all
-        top/bottom right/left
-        top right/left bottom
-        top right bottom left
-
-    marginの相殺
-    marginが並ぶ場合、margin同士が結合されて
-    大きいサイズのmarginが優先される
+    text
+    - color: orange;
+    - font-size: 14px;
+    - font-family: Arial, Helvetica;
+    - font-weight: bold / normal;
+    - text-align: right / center / left;
+    - text-decoration: 
+        underline / line-through / none;
  */
 
-body {
-    margin: 0;
+p {
+    color : silver;
+    font-size: 24px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: 
+        underline line-through;
 }
 
-div#box1 {
-    background: red;
-    margin: 100px;
-}
-
-div#box2 {
-    background: blue;
-    margin: 10px;
 }
