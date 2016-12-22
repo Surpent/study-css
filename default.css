@@ -1,25 +1,33 @@
 /*
-    セレクタ { プロパティ名: 値; }
-
-    セレクタ { プロパティ名: 値; プロパティ名: 値; }
-
-
-    セレクタ {
-        プロパティ名: 値;
-        プロパティ名: 値;
-    }
-
-* ユニバーサルセレクタ
-全ての要素に対して適用する
-
-要素名 p h1 div
-#id
-.class
-
+    セレクタ
+a, b
+a b
+a > b
+a + b
+ab
 */
 
-/* * { color : skyblue; }*/
+/*
+h1 と p に対してスタイル適用
+h1, p {color: skyblue;}
+*/
 
-h1 {color: skyblue;}
-#first {color: orange;}
-.points {color: violet;}
+/*
+divの下にあるspanに対して適用
+div span {color: skyblue;}
+*/
+
+/*
+div 直下にある span だけに対して適用
+div > span {color: skyblue;}
+*/
+
+/*
+p の次にある p に対して適用
+p + p { color:skyblue; }
+*/
+
+/*
+p であり、かつ points が付いているものに適用
+*/
+p.points {color:skyblue;}
