@@ -1,19 +1,30 @@
 /*
-    属性セレクタ
+    セレクタ
+    擬似クラス
  */
 
 /*
-a タグがあり[title]属性があるものに適用
-a[title] {color: skyblue;}
+ul にある 一番最初の li 要素に対して適用
 */
 
-/*
-a タグの [href]属性が"http://google.com"だったら適用
-完全一致する場合に使える
-a[href="http://google.com"] {color: orange;}
-*/
+ul li:first-child {color: violet;}
 
 /*
-a タグの[class]属性に search が"含まれているもの"に適用
+リンクに対してのスタイル適用
+
+link リンク
+visited 訪問済み
+hover マウスオーバー
+active クリック時
+
+この記述順を守る必要がある
 */
-a[class~="search"] {color: violet;}
+a:link {color: violet;}
+a:visited {color: orange;}
+a:hover {color: blue;}
+a:active {color: red}
+
+/*
+inputにフォーカスが移ったら適用
+*/
+input:focus {background: skyblue;}
