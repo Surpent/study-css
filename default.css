@@ -1,21 +1,41 @@
 /*
-    display: table
+    position
+        static
+        relative
+        fixed
+        absolute
  */
 
-.container {
-    display: table;
-    width: 300px;
+body {
+    margin: 0
 }
 
-.box {
-    display: table-cell;
-    width: 100px;
+#box0 { width: 5px; height: 600px;}
+#box1 { width: 100px; height: 50px;}
+#box2 { width: 100px; height: 50px;}
+#box3 { width: 50px; height: 25px;}
+
+#box0 {
+    background: red;
+    position: fixed;
 }
 
-.row {
-    display: table-row;
+#box1 {
+    background: gray;
+    position: relative;
+    top: 10px;
+    left: 10px;
 }
 
-.gray {background:gray;}
-.silver {background:silver;}
-.orange {background:orange;}
+#box2 {
+    background: silver;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    /*staticだとbox3が画面の左上から配置される*/
+}
+
+#box3 {
+    background: orange;
+    position: absolute;
+}
