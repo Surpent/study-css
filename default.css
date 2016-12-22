@@ -1,36 +1,18 @@
 /*
-値
-- 長さ
-    - px
-    - em
-    - %
-- 色
-    - 名前
-    - RGB
-        - Red 0-f / 00-ff / 0-100%
-        - Green 0-f / 00-ff / 0-100%
-        - Blue 0-f / 00-ff / 0-100%
+    ボックスモデル
  */
 
-body {font-size: 16px;}
 
 /*
-em は 倍率
-32px になる
+    heightに対しては明示的にサイズを示してあげる必要がある
 */
-h1{ font-size: 2em;}
 
-/*
-パーセンテージで指定
-*/
-h2{ font-size: 150%;}
+body, html { height: 100%;}
 
-
-/*
-いろんな {color: blue;} の表し方
-*/
-body {color: blue;}
-body {color: #00f;}
-body {color: #0000ff;}
-body {color: rgb(0, 0, 255);}
-body {color: rgb(0%, 0%, 100%);}
+div {
+    background: silver;
+    /* width: 200px; */
+    width: 50%;
+    /* height: 100px; */
+    height: 50%;
+}
